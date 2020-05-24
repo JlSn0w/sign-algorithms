@@ -1,13 +1,11 @@
 # 简介
-##### 一些Android app的签名或加密算法。
-##### 如果有新版本可以在issues交流。
+##### 逆向Android app获取或调用签名算法。
 
-#### App列表
-
-### 美拍
-
-
-
-
-##### 免责声明
-##### 本项目所有内容仅供技术交流，请勿用于商业及非法用途，因此产生的任何法律纠纷均与本人无关。
+app | 版本 | 参数 | 说明 | 时间
+-|-|-|- | -
+美拍 | 7.9.5 | sig和sigTime | | 
+梨视频 | 6.7.2 | X-Client-Hash | | 
+链家 | 9.12.0 | Authorization | | 
+秒拍 | 7.2.68 | sign和response解密 | 调用libte.so，集成在HttpSo:https://github.com/heyaug/HttpSo | 2020.5.7 
+小红书 | - | sign | | 
+抖音 | 10.9.0 | x-gorgon和X-Khronos | 调用libcms.so生成0404开头的x-gorgon，集成在HttpSo:https://github.com/heyaug/HttpSo | 2020.5.9 
