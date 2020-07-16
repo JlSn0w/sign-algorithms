@@ -47,6 +47,10 @@ if __name__=="__main__":
 
 	r=requests.get(url=url,headers=headers)
 	data=base64.b64encode(r.content).decode()
+# git clone https://github.com/heyaug/HttpSo
+# 安装app
+# 模拟器：adb forward tcp:8887 tcp:8888
+# 真机：替换成显示ip+8888端口
 	b=requests.post(url="http://127.0.0.1:8887/decode",data=data)
 	print(b.json()["result"][1])
 
