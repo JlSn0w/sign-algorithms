@@ -3,8 +3,6 @@ import time
 import hashlib
 import requests
 
-# 在com.meitu.secret.SigEntity调用native方法
-
 def gen_sig(url, sigtime):
     url = parse.unquote(url)
     v1 = [i.split("=")[1] for i in url.split("&") if "sig" not in i]
